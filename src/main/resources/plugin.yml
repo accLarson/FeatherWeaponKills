@@ -1,0 +1,6 @@
+name: FeatherWeaponKills
+version: '${project.version}'
+main: com.zerek.featherweaponkills.FeatherWeaponKills
+api-version: 1.19
+authors: [ Zerek ]
+description: Tracks the weapon kill count in the lore of the item.
