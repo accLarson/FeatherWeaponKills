@@ -6,7 +6,7 @@
 
     <groupId>com.zerek</groupId>
     <artifactId>FeatherWeaponKills</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <name>FeatherWeaponKills</name>
