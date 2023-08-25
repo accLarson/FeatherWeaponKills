@@ -1,6 +1,6 @@
-package com.zerek.featherweaponkills;
+package dev.zerek.featherweaponkills;
 
-import com.zerek.featherweaponkills.listeners.PlayerDeathListener;
+import dev.zerek.featherweaponkills.listeners.PlayerDeathListener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class FeatherWeaponKills extends JavaPlugin {

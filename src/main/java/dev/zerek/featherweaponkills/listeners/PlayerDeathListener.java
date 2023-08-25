@@ -1,6 +1,6 @@
-package com.zerek.featherweaponkills.listeners;
+package dev.zerek.featherweaponkills.listeners;
 
-import com.zerek.featherweaponkills.FeatherWeaponKills;
+import dev.zerek.featherweaponkills.FeatherWeaponKills;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.minimessage.MiniMessage;
 import org.bukkit.entity.Player;
