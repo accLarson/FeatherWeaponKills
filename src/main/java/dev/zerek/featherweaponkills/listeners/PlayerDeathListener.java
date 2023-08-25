@@ -16,10 +16,10 @@ import java.util.List;
 public class PlayerDeathListener implements Listener {
 
     private final FeatherWeaponKills plugin;
-    private final List<String> WEAPONS = Arrays.asList(
-            "BOW", "CROSSBOW", "TRIDENT",
-            "WOODEN_SWORD", "STONE_SWORD", "IRON_SWORD", "GOLDEN_SWORD", "DIAMOND_SWORD", "NETHERITE_SWORD",
-            "WOODEN_AXE", "STONE_AXE", "IRON_AXE", "GOLDEN_AXE", "DIAMOND_AXE", "NETHERITE_AXE");
+//    private final List<String> WEAPONS = Arrays.asList(
+//            "BOW", "CROSSBOW", "TRIDENT",
+//            "WOODEN_SWORD", "STONE_SWORD", "IRON_SWORD", "GOLDEN_SWORD", "DIAMOND_SWORD", "NETHERITE_SWORD",
+//            "WOODEN_AXE", "STONE_AXE", "IRON_AXE", "GOLDEN_AXE", "DIAMOND_AXE", "NETHERITE_AXE");
 
 
     public PlayerDeathListener(FeatherWeaponKills plugin) {
@@ -32,7 +32,7 @@ public class PlayerDeathListener implements Listener {
             Player killer = event.getPlayer().getKiller();
             ItemStack itemStack = killer.getInventory().getItemInMainHand();
 
-            if (WEAPONS.contains(itemStack.getType().toString())) {
+            if (!itemStack.getType().isBlock()) {
 
                 if (itemStack.lore() != null) {
 
