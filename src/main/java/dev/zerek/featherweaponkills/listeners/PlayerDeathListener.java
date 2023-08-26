@@ -3,6 +3,7 @@ package dev.zerek.featherweaponkills.listeners;
 import dev.zerek.featherweaponkills.FeatherWeaponKills;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.minimessage.MiniMessage;
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -33,7 +34,7 @@ public class PlayerDeathListener implements Listener {
             Player killer = event.getPlayer().getKiller();
             ItemStack itemStack = killer.getInventory().getItemInMainHand();
 
-            if (!itemStack.getType().isBlock()) {
+            if (!itemStack.getType().isBlock() && !itemStack.getType().equals(Material.END_CRYSTAL)) {
 
                 if (itemStack.lore() != null) {
 
