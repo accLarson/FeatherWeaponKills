@@ -34,7 +34,7 @@ public class PlayerDeathListener implements Listener {
             Player killer = event.getPlayer().getKiller();
             ItemStack itemStack = killer.getInventory().getItemInMainHand();
 
-            if (!itemStack.getType().isBlock() && !itemStack.getType().equals(Material.END_CRYSTAL) && itemStack.getAmount() == 1) {
+            if (!itemStack.getType().isBlock() && !itemStack.getType().equals(Material.END_CRYSTAL) && (itemStack.getAmount() == 1)) {
 
                 if (itemStack.lore() != null) {
 
